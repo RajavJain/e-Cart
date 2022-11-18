@@ -4,7 +4,7 @@ export const addItem=(qty)=>{
     return (dispatch) =>{
         dispatch ({
             type: 'add',
-            payload: 'qty'
+            payload: qty
         })
     }
 }
@@ -13,7 +13,7 @@ export const delItem=(qty)=>{
     return (dispatch) =>{
         dispatch ({
             type: 'del',
-            payload: 'qty'
+            payload: qty
         })
     }
 }

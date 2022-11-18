@@ -1,6 +1,8 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
+    const qty = useSelector(state=>state.qty)
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-light">
@@ -16,7 +18,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <div>
-                                <button className="btn btn-success" disabled={true} type="submit">Items: 2</button>
+                                <button className="btn btn-success" disabled={true} type="submit">Items: {qty}</button>
                         </div>
                     </div>
                 </div>
