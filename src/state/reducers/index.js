@@ -6,4 +6,4 @@ const reducer = combineReducers({
     qty: qtyReducer
 })
 
-export default reducer
+export default reducer 

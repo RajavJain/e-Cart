@@ -6,4 +6,4 @@ import reducers from "./reducers";
 
 const store= legacy_createStore(reducers, {}, applyMiddleware(thunk))
 
-export default store;
+export default store; 
